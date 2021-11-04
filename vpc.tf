@@ -1,6 +1,6 @@
-module "vpc" {
-    source  = "terraform-google-modules/network/google"
-    version = "~> 3.0"
+module "network" {
+    source  = "app.terraform.io/HashiCat-for-GCP/network/google"    
+    version = "3.4.0"
 
     project_id   = var.project
     network_name = "gaurav-network"
@@ -15,4 +15,3 @@ module "vpc" {
     ]
  
 }
-
